@@ -1,0 +1,30 @@
+{
+  "name": "plugin-content-claude-plugin-commands",
+  "version": "0.1.0",
+  "description": "Docusaurus plugin for generating a command quick-reference page from a Claude Code plugin manifest (_index.json)",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": ["lib"],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "jest",
+    "prepare": "npm run build"
+  },
+  "keywords": ["docusaurus", "plugin", "claude", "claude-code", "commands"],
+  "peerDependencies": {
+    "@docusaurus/types": "^3.0.0"
+  },
+  "dependencies": {
+    "lib-artifact-transforms": "github:joestump/lib-artifact-transforms#main"
+  },
+  "devDependencies": {
+    "@docusaurus/types": "^3.0.0",
+    "@types/jest": "^29.0.0",
+    "@types/node": "^20.0.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "typescript": "^5.0.0"
+  }
+}
